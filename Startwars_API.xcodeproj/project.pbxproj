@@ -14,6 +14,8 @@
 		BEC482521FB3D7D100CE2636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC482501FB3D7D100CE2636 /* LaunchScreen.storyboard */; };
 		BEC482551FB3D7D100CE2636 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC482541FB3D7D100CE2636 /* main.m */; };
 		BEC4825F1FB3D8A200CE2636 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BEC4825E1FB3D8A200CE2636 /* Podfile */; };
+		BEC482631FB3D91D00CE2636 /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC482621FB3D91D00CE2636 /* Declarations.m */; };
+		BEC482661FB3D93100CE2636 /* WebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC482651FB3D93100CE2636 /* WebServices.m */; };
 		E3180190DE35DE9B56AA3DC3 /* libPods-Startwars_API.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F964C3B0656402C56BCB30E /* libPods-Startwars_API.a */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +33,12 @@
 		BEC482511FB3D7D100CE2636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEC482531FB3D7D100CE2636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEC482541FB3D7D100CE2636 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BEC4825E1FB3D8A200CE2636 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BEC4825E1FB3D8A200CE2636 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BEC482611FB3D91D00CE2636 /* Declarations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		BEC482621FB3D91D00CE2636 /* Declarations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
+		BEC482641FB3D93100CE2636 /* WebServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebServices.h; sourceTree = "<group>"; };
+		BEC482651FB3D93100CE2636 /* WebServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebServices.m; sourceTree = "<group>"; };
+		BEC482671FB3D94700CE2636 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +125,11 @@
 		BEC482601FB3D8E800CE2636 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				BEC482611FB3D91D00CE2636 /* Declarations.h */,
+				BEC482621FB3D91D00CE2636 /* Declarations.m */,
+				BEC482641FB3D93100CE2636 /* WebServices.h */,
+				BEC482651FB3D93100CE2636 /* WebServices.m */,
+				BEC482671FB3D94700CE2636 /* Constants.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -257,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC4824A1FB3D7D100CE2636 /* ViewController.m in Sources */,
+				BEC482661FB3D93100CE2636 /* WebServices.m in Sources */,
 				BEC482551FB3D7D100CE2636 /* main.m in Sources */,
+				BEC482631FB3D91D00CE2636 /* Declarations.m in Sources */,
 				BEC482471FB3D7D100CE2636 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
