@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BEC482471FB3D7D100CE2636 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC482461FB3D7D100CE2636 /* AppDelegate.m */; };
-		BEC4824A1FB3D7D100CE2636 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC482491FB3D7D100CE2636 /* ViewController.m */; };
+		BEC4824A1FB3D7D100CE2636 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC482491FB3D7D100CE2636 /* Home.m */; };
 		BEC4824D1FB3D7D100CE2636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC4824B1FB3D7D100CE2636 /* Main.storyboard */; };
 		BEC4824F1FB3D7D100CE2636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC4824E1FB3D7D100CE2636 /* Assets.xcassets */; };
 		BEC482521FB3D7D100CE2636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC482501FB3D7D100CE2636 /* LaunchScreen.storyboard */; };
@@ -16,6 +16,7 @@
 		BEC4825F1FB3D8A200CE2636 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BEC4825E1FB3D8A200CE2636 /* Podfile */; };
 		BEC482631FB3D91D00CE2636 /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC482621FB3D91D00CE2636 /* Declarations.m */; };
 		BEC482661FB3D93100CE2636 /* WebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC482651FB3D93100CE2636 /* WebServices.m */; };
+		BEC4826B1FB3DB9300CE2636 /* SWObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC4826A1FB3DB9300CE2636 /* SWObject.m */; };
 		E3180190DE35DE9B56AA3DC3 /* libPods-Startwars_API.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F964C3B0656402C56BCB30E /* libPods-Startwars_API.a */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +27,8 @@
 		BEC482421FB3D7D100CE2636 /* Startwars_API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Startwars_API.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC482451FB3D7D100CE2636 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEC482461FB3D7D100CE2636 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BEC482481FB3D7D100CE2636 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BEC482491FB3D7D100CE2636 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEC482481FB3D7D100CE2636 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		BEC482491FB3D7D100CE2636 /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		BEC4824C1FB3D7D100CE2636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEC4824E1FB3D7D100CE2636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEC482511FB3D7D100CE2636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +40,8 @@
 		BEC482641FB3D93100CE2636 /* WebServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebServices.h; sourceTree = "<group>"; };
 		BEC482651FB3D93100CE2636 /* WebServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebServices.m; sourceTree = "<group>"; };
 		BEC482671FB3D94700CE2636 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		BEC482691FB3DB9300CE2636 /* SWObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWObject.h; sourceTree = "<group>"; };
+		BEC4826A1FB3DB9300CE2636 /* SWObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		BEC482441FB3D7D100CE2636 /* Startwars_API */ = {
 			isa = PBXGroup;
 			children = (
+				BEC482681FB3DB7500CE2636 /* Models */,
 				BEC482601FB3D8E800CE2636 /* Helpers */,
 				BEC4825D1FB3D82200CE2636 /* View */,
 				BEC4825C1FB3D80C00CE2636 /* Controllers */,
@@ -107,8 +111,8 @@
 		BEC4825C1FB3D80C00CE2636 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BEC482481FB3D7D100CE2636 /* ViewController.h */,
-				BEC482491FB3D7D100CE2636 /* ViewController.m */,
+				BEC482481FB3D7D100CE2636 /* Home.h */,
+				BEC482491FB3D7D100CE2636 /* Home.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -132,6 +136,15 @@
 				BEC482671FB3D94700CE2636 /* Constants.h */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BEC482681FB3DB7500CE2636 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEC482691FB3DB9300CE2636 /* SWObject.h */,
+				BEC4826A1FB3DB9300CE2636 /* SWObject.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D34391004BB5FD7D7624FAA8 /* Frameworks */ = {
@@ -268,10 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEC4824A1FB3D7D100CE2636 /* ViewController.m in Sources */,
+				BEC4824A1FB3D7D100CE2636 /* Home.m in Sources */,
 				BEC482661FB3D93100CE2636 /* WebServices.m in Sources */,
 				BEC482551FB3D7D100CE2636 /* main.m in Sources */,
 				BEC482631FB3D91D00CE2636 /* Declarations.m in Sources */,
+				BEC4826B1FB3DB9300CE2636 /* SWObject.m in Sources */,
 				BEC482471FB3D7D100CE2636 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

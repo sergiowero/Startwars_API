@@ -9,5 +9,6 @@
 #ifndef Constants_h
 #define Constants_h
 
+#define URLStarwarsAPI @"https://swapi.co/api/"
 
 #endif /* Constants_h */
