@@ -42,6 +42,9 @@
 		BEC482391FB3D7D100CE2636 = {
 			isa = PBXGroup;
 			children = (
+				BEC4825D1FB3D82200CE2636 /* View */,
+				BEC4825C1FB3D80C00CE2636 /* Controllers */,
+				BEC4825B1FB3D7FD00CE2636 /* Main */,
 				BEC482441FB3D7D100CE2636 /* Startwars_API */,
 				BEC482431FB3D7D100CE2636 /* Products */,
 			);
@@ -58,17 +61,38 @@
 		BEC482441FB3D7D100CE2636 /* Startwars_API */ = {
 			isa = PBXGroup;
 			children = (
-				BEC482451FB3D7D100CE2636 /* AppDelegate.h */,
-				BEC482461FB3D7D100CE2636 /* AppDelegate.m */,
-				BEC482481FB3D7D100CE2636 /* ViewController.h */,
-				BEC482491FB3D7D100CE2636 /* ViewController.m */,
-				BEC4824B1FB3D7D100CE2636 /* Main.storyboard */,
 				BEC4824E1FB3D7D100CE2636 /* Assets.xcassets */,
-				BEC482501FB3D7D100CE2636 /* LaunchScreen.storyboard */,
 				BEC482531FB3D7D100CE2636 /* Info.plist */,
 				BEC482541FB3D7D100CE2636 /* main.m */,
 			);
 			path = Startwars_API;
+			sourceTree = "<group>";
+		};
+		BEC4825B1FB3D7FD00CE2636 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BEC482451FB3D7D100CE2636 /* AppDelegate.h */,
+				BEC482461FB3D7D100CE2636 /* AppDelegate.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BEC4825C1FB3D80C00CE2636 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEC482481FB3D7D100CE2636 /* ViewController.h */,
+				BEC482491FB3D7D100CE2636 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BEC4825D1FB3D82200CE2636 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEC4824B1FB3D7D100CE2636 /* Main.storyboard */,
+				BEC482501FB3D7D100CE2636 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
