@@ -21,6 +21,7 @@
     [super viewDidLoad];
     
     _people = [[NSMutableArray alloc] init];
+    [self refreshPeople];
 }
 
 
@@ -30,10 +31,22 @@
 }
 
 - (IBAction)btnRefreshPressed:(id)sender {
+    [self refreshPeople];
 }
 
 -(void) refreshPeople {
-    
+    if([UIApplication sharedApplication].networkActivityIndicatorVisible)
+        return;
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    [WebServices getPeople:^(NSMutableArray<SWObject> *people) {
+        
+        if(people){
+            [_people removeAllObjects];
+            [_people addObjectsFromArray:people];
+        }
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        [self.tableView reloadData];
+    }];
 }
 
 #pragma mark - Table
@@ -52,11 +65,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
-    SWPersonCell *cell = (SWPersonCell *)[tableView dequeueReusableCellWithIdentifier:@"SWPeopleCell"];
+    SWPersonCell *cell = (SWPersonCell *)[tableView dequeueReusableCellWithIdentifier:@"SWPersonCell"];
     
     if (cell == nil) {
-        [tableView registerNib:[UINib nibWithNibName:@"SWPeopleCell" bundle:nil] forCellReuseIdentifier:@"SWPeopleCell"];
-        cell = [tableView dequeueReusableCellWithIdentifier:@"SWPeopleCell"];
+        [tableView registerNib:[UINib nibWithNibName:@"SWPersonCell" bundle:nil] forCellReuseIdentifier:@"SWPersonCell"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"SWPersonCell"];
     }
     
     //Fill cell with info from arrays

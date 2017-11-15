@@ -59,7 +59,7 @@
         
         if(data!=nil){
             NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-            NSLog(@"response received %@",jsonResponse);
+            //NSLog(@"response received %@",jsonResponse);
             
             if(jsonResponse != nil){
                 
