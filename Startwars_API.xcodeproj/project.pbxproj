@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE2A0D5C1FBBF9FF004D6CAE /* SWPersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2A0D5A1FBBF9FF004D6CAE /* SWPersonCell.m */; };
+		BE2A0D5D1FBBF9FF004D6CAE /* SWPersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2A0D5B1FBBF9FF004D6CAE /* SWPersonCell.xib */; };
 		BEC482471FB3D7D100CE2636 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC482461FB3D7D100CE2636 /* AppDelegate.m */; };
 		BEC4824A1FB3D7D100CE2636 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC482491FB3D7D100CE2636 /* Home.m */; };
 		BEC4824D1FB3D7D100CE2636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC4824B1FB3D7D100CE2636 /* Main.storyboard */; };
@@ -24,6 +26,9 @@
 		0A8E0C25D262A8274107086A /* Pods-Startwars_API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Startwars_API.release.xcconfig"; path = "Pods/Target Support Files/Pods-Startwars_API/Pods-Startwars_API.release.xcconfig"; sourceTree = "<group>"; };
 		4F964C3B0656402C56BCB30E /* libPods-Startwars_API.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Startwars_API.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D14B1F17F72B52465B83E6 /* Pods-Startwars_API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Startwars_API.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Startwars_API/Pods-Startwars_API.debug.xcconfig"; sourceTree = "<group>"; };
+		BE2A0D591FBBF9FF004D6CAE /* SWPersonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWPersonCell.h; sourceTree = "<group>"; };
+		BE2A0D5A1FBBF9FF004D6CAE /* SWPersonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWPersonCell.m; sourceTree = "<group>"; };
+		BE2A0D5B1FBBF9FF004D6CAE /* SWPersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWPersonCell.xib; sourceTree = "<group>"; };
 		BEC482421FB3D7D100CE2636 /* Startwars_API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Startwars_API.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC482451FB3D7D100CE2636 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEC482461FB3D7D100CE2636 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +70,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BE2A0D581FBBF9CD004D6CAE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BE2A0D591FBBF9FF004D6CAE /* SWPersonCell.h */,
+				BE2A0D5A1FBBF9FF004D6CAE /* SWPersonCell.m */,
+				BE2A0D5B1FBBF9FF004D6CAE /* SWPersonCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		BEC482391FB3D7D100CE2636 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +102,7 @@
 		BEC482441FB3D7D100CE2636 /* Startwars_API */ = {
 			isa = PBXGroup;
 			children = (
+				BE2A0D581FBBF9CD004D6CAE /* Cells */,
 				BEC482681FB3DB7500CE2636 /* Models */,
 				BEC482601FB3D8E800CE2636 /* Helpers */,
 				BEC4825D1FB3D82200CE2636 /* View */,
@@ -218,6 +234,7 @@
 			files = (
 				BEC482521FB3D7D100CE2636 /* LaunchScreen.storyboard in Resources */,
 				BEC4824F1FB3D7D100CE2636 /* Assets.xcassets in Resources */,
+				BE2A0D5D1FBBF9FF004D6CAE /* SWPersonCell.xib in Resources */,
 				BEC4825F1FB3D8A200CE2636 /* Podfile in Resources */,
 				BEC4824D1FB3D7D100CE2636 /* Main.storyboard in Resources */,
 			);
@@ -286,6 +303,7 @@
 				BEC482551FB3D7D100CE2636 /* main.m in Sources */,
 				BEC482631FB3D91D00CE2636 /* Declarations.m in Sources */,
 				BEC4826B1FB3DB9300CE2636 /* SWObject.m in Sources */,
+				BE2A0D5C1FBBF9FF004D6CAE /* SWPersonCell.m in Sources */,
 				BEC482471FB3D7D100CE2636 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
