@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BE2A0D5C1FBBF9FF004D6CAE /* SWPersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2A0D5A1FBBF9FF004D6CAE /* SWPersonCell.m */; };
 		BE2A0D5D1FBBF9FF004D6CAE /* SWPersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2A0D5B1FBBF9FF004D6CAE /* SWPersonCell.xib */; };
+		BEBC55961FBC049B00277A29 /* PersonDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBC55951FBC049B00277A29 /* PersonDetail.m */; };
 		BEC482471FB3D7D100CE2636 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC482461FB3D7D100CE2636 /* AppDelegate.m */; };
 		BEC4824A1FB3D7D100CE2636 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC482491FB3D7D100CE2636 /* Home.m */; };
 		BEC4824D1FB3D7D100CE2636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC4824B1FB3D7D100CE2636 /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 		BE2A0D591FBBF9FF004D6CAE /* SWPersonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWPersonCell.h; sourceTree = "<group>"; };
 		BE2A0D5A1FBBF9FF004D6CAE /* SWPersonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWPersonCell.m; sourceTree = "<group>"; };
 		BE2A0D5B1FBBF9FF004D6CAE /* SWPersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWPersonCell.xib; sourceTree = "<group>"; };
+		BEBC55941FBC049B00277A29 /* PersonDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonDetail.h; sourceTree = "<group>"; };
+		BEBC55951FBC049B00277A29 /* PersonDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonDetail.m; sourceTree = "<group>"; };
 		BEC482421FB3D7D100CE2636 /* Startwars_API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Startwars_API.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC482451FB3D7D100CE2636 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEC482461FB3D7D100CE2636 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 			children = (
 				BEC482481FB3D7D100CE2636 /* Home.h */,
 				BEC482491FB3D7D100CE2636 /* Home.m */,
+				BEBC55941FBC049B00277A29 /* PersonDetail.h */,
+				BEBC55951FBC049B00277A29 /* PersonDetail.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				BEC4824A1FB3D7D100CE2636 /* Home.m in Sources */,
 				BEC482661FB3D93100CE2636 /* WebServices.m in Sources */,
 				BEC482551FB3D7D100CE2636 /* main.m in Sources */,
+				BEBC55961FBC049B00277A29 /* PersonDetail.m in Sources */,
 				BEC482631FB3D91D00CE2636 /* Declarations.m in Sources */,
 				BEC4826B1FB3DB9300CE2636 /* SWObject.m in Sources */,
 				BE2A0D5C1FBBF9FF004D6CAE /* SWPersonCell.m in Sources */,

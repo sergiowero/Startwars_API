@@ -10,6 +10,7 @@
 #import "WebServices.h"
 #import "Constants.h"
 #import "SWPersonCell.h"
+#import "PersonDetail.h"
 
 @interface Home ()
 @property NSMutableArray *people;
@@ -81,4 +82,16 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self performSegueWithIdentifier:@"PeopleTableToDetail" sender:self];
 }
+
+
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+     
+     PersonDetail* detailView = (PersonDetail*)[segue destinationViewController];
+     long index = [self.tableView.indexPathForSelectedRow row];
+     [detailView setPerson: [self.people objectAtIndex:index]];
+ }
+ 
 @end
