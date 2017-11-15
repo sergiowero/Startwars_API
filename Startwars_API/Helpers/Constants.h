@@ -9,6 +9,8 @@
 #ifndef Constants_h
 #define Constants_h
 
-#define URLStarwarsAPI @"https://swapi.co/api/"
+#define nURLStarwarsAPI @"https://swapi.co/api/"
+#define nResponseCodeOK     200
+#define nURLStarwarsPeople  @"people/"
 
 #endif /* Constants_h */

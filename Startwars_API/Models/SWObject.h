@@ -7,7 +7,7 @@
 //
 
 #import <JSONModel/JSONModel.h>
-
+@protocol SWObject;
 @interface SWObject : JSONModel
 
 @property (strong, nonatomic) NSString *name;
