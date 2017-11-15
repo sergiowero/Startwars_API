@@ -11,6 +11,6 @@
 
 #define nURLStarwarsAPI @"https://swapi.co/api/"
 #define nResponseCodeOK     200
-#define nURLStarwarsPeople  @"people/"
+#define nURLStarwarsPeople  @"people/?page="
 
 #endif /* Constants_h */

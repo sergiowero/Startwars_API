@@ -10,10 +10,11 @@
 
 @implementation WebServices
 //--------------------------------------------------------------------------------------------
-+ (void)getPeople:(void (^)(NSMutableArray<SWObject> *people)) handler{
++ (void)getPeople:(int)page completion:(void (^)(NSMutableArray<SWObject> *people)) handler{
     
     NSURLSession *session = [self getSession];
-    NSMutableURLRequest * request = [self getRequest:[nURLStarwarsAPI stringByAppendingString:nURLStarwarsPeople] forData:nil];
+    NSString* peopleReqStr =[nURLStarwarsPeople stringByAppendingFormat:@"%d",page];
+    NSMutableURLRequest * request = [self getRequest:[nURLStarwarsAPI stringByAppendingString:peopleReqStr] forData:nil];
     
     [[session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         

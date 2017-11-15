@@ -16,6 +16,8 @@
 @property NSMutableArray *people;
 @end
 
+int requestCounter = 0;
+
 @implementation Home
 
 - (void)viewDidLoad {
@@ -38,16 +40,33 @@
 -(void) refreshPeople {
     if([UIApplication sharedApplication].networkActivityIndicatorVisible)
         return;
+    
+    [_people removeAllObjects];
+    [self.tableView reloadData];
+    requestCounter = 0;
+    
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    [WebServices getPeople:^(NSMutableArray<SWObject> *people) {
-        
-        if(people){
-            [_people removeAllObjects];
-            [_people addObjectsFromArray:people];
-        }
+    [WebServices getPeople:1 completion:^(NSMutableArray<SWObject> *people) { [self handler:people]; }];
+    [WebServices getPeople:2 completion:^(NSMutableArray<SWObject> *people) { [self handler:people]; }];
+    [WebServices getPeople:3 completion:^(NSMutableArray<SWObject> *people) { [self handler:people]; }];
+    [WebServices getPeople:4 completion:^(NSMutableArray<SWObject> *people) { [self handler:people]; }];
+    [WebServices getPeople:5 completion:^(NSMutableArray<SWObject> *people) { [self handler:people]; }];
+    [WebServices getPeople:6 completion:^(NSMutableArray<SWObject> *people) { [self handler:people]; }];
+    [WebServices getPeople:7 completion:^(NSMutableArray<SWObject> *people) { [self handler:people]; }];
+    [WebServices getPeople:8 completion:^(NSMutableArray<SWObject> *people) { [self handler:people]; }];
+    [WebServices getPeople:9 completion:^(NSMutableArray<SWObject> *people) { [self handler:people]; }];
+}
+
+-(void) handler:(NSMutableArray<SWObject>*) people {
+    if(people){
+        //[_people removeAllObjects];
+        [_people addObjectsFromArray:people];
+    }
+    requestCounter ++;
+    if(requestCounter == 9){
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         [self.tableView reloadData];
-    }];
+    }
 }
 
 #pragma mark - Table

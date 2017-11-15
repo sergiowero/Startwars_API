@@ -12,7 +12,7 @@
 
 @interface WebServices : NSObject<NSURLSessionDelegate>
 
-+ (void)getPeople:(void (^)(NSMutableArray<SWObject> *people)) handler;
++ (void)getPeople:(int)page completion:(void (^)(NSMutableArray<SWObject> *people)) handler;
 + (void)getPerson:(NSString*)personID completion: (void (^)(SWObject *person)) handler;
 
 @end
